@@ -1,8 +1,8 @@
-const express = require('express');
-const uploadController = require('../controllers/uploadSomething');
+import express from 'express';
+import uploadController from '../controllers/uploadSomething.js';
 
 const router = express.Router();
 
 router.post('/api/upload', uploadController);
 
-module.exports = router;
+export default router;

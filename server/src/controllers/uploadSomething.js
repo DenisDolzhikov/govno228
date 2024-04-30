@@ -1,12 +1,12 @@
-function uploadController(req, res, next) {
+const uploadController = (req, res) => {
   let filedata = req.file;
   console.log(filedata);
   
   if (!filedata) {
-    res.send('Ошибка при загрузке файла');
+    console.log('ошибка');
   } 
 
-  res.send('Файл загружен');
+  console.log('Файл загружен');
 }
 
-module.exports = uploadController;
+export default uploadController;
